@@ -37,7 +37,7 @@ function Seo({ description, lang, meta, title }) {
       titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
       meta={[
         {
-          name: `One Shot Predator Management | Handling all your varmint problems`,
+          name: `One Shot Predator Management | Fort Worth, TX | Handling all your varmint problems`,
           content: metaDescription,
         },
         {
@@ -46,11 +46,11 @@ function Seo({ description, lang, meta, title }) {
         },
         {
           property: `og:description`,
-          content: metaDescription,
+          content: "OneShot Predator Management is Fort Worth Texas's Premier company in effective predator control solutions, offering services to protect your property and livestock from predators. Experienced, licensed professionals ready to assist.",
         },
         {
           property: `og:type`,
-          content: `website`,
+          content: `www.oneshotpredatormgmt.com`,
         },
         {
           name: `twitter:card`,
