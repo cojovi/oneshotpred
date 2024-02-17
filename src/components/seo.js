@@ -37,12 +37,12 @@ function Seo({ description, lang, meta, title }) {
       titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
       meta={[
         {
-          name: `One Shot Predator Management | Fort Worth, TX | Handling all your varmint problems`,
-          content: metaDescription,
+          name: `description`,
+          content: "One Shot Predator Management | Fort Worth, TX | Handling all your varmint problems",
         },
         {
           property: `og:title`,
-          content: title,
+          content: "Effective Predator Management Solutions in Fort Worth Texas | OneShot Predator Management",
         },
         {
           property: `og:description`,
