@@ -5,10 +5,10 @@
  * See: https://www.gatsbyjs.com/docs/use-static-query/
  */
 
-import * as React from "react"
-import PropTypes from "prop-types"
-import { Helmet } from "react-helmet"
-import { useStaticQuery, graphql } from "gatsby"
+import * as React from "react";
+import PropTypes from "prop-types";
+import { Helmet } from "react-helmet";
+import { useStaticQuery, graphql } from "gatsby";
 
 function Seo({ description, lang, meta, title }) {
   const { site } = useStaticQuery(
@@ -23,10 +23,45 @@ function Seo({ description, lang, meta, title }) {
         }
       }
     `
-  )
+  );
 
-  const metaDescription = description || site.siteMetadata.description
-  const defaultTitle = site.siteMetadata?.title
+  const metaDescription = description || site.siteMetadata.description;
+  const defaultTitle = site.siteMetadata?.title;
+
+  // Schema Markup for Local Business
+  const schemaMarkup = {
+    "@context": "http://schema.org",
+    "@type": "LocalBusiness",
+    "name": "One Shot Predator Management",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "118 Clyde Dr, Aledo, TX 76008",
+      "addressLocality": "Aledo",
+      "addressRegion": "TX",
+      "postalCode": "76008",
+      "addressCountry": "USA"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "32.68541",
+      "longitude": "-97.60558"
+    },
+    "telephone": "+1-800-123-4567",
+    "url": "http://www.oneshotpredatormgmt.com",
+    "areaServed": [
+      {
+        "@type": "GeoCircle",
+        "geoMidpoint": {
+          "@type": "GeoCoordinates",
+          "latitude": "32.68541",
+          "longitude": "-97.60558"
+        },
+        "geoRadius": "160934" // 100 miles in meters
+      }
+    ],
+    "openingHours": "Mo-Sa 08:00-18:00",
+    "sameAs": [] // Add URLs to any of your social media profiles
+  };
 
   return (
     <Helmet
@@ -38,23 +73,23 @@ function Seo({ description, lang, meta, title }) {
       meta={[
         {
           name: `title`,
-          content: "One Shot Predator Management | Fort Worth, TX | Handling all your varmint problems",
+          content: "One Shot Predator Management | Effective Predator Control in Fort Worth, TX",
         },
         {
           name: `description`,
-          content: "One Shot Predator Management | Fort Worth, TX | Handling all your varmint problems",
+          content: "One Shot Predator Management specializes in effective predator control, offering services throughout Fort Worth, TX, and surrounding areas. Protect your property and livestock with our experienced team.",
         },
         {
           property: `og:title`,
-          content: "Effective Predator Management Solutions in Fort Worth Texas | OneShot Predator Management",
+          content: "One Shot Predator Management | Effective Predator Control in Fort Worth, TX",
         },
         {
           property: `og:description`,
-          content: "OneShot Predator Management is Fort Worth Texas's Premier company in effective predator control solutions, offering services to protect your property and livestock from predators. Experienced, licensed professionals ready to assist.",
+          content: metaDescription,
         },
         {
           property: `og:type`,
-          content: `www.oneshotpredatormgmt.com`,
+          content: `website`,
         },
         {
           name: `twitter:card`,
@@ -73,21 +108,26 @@ function Seo({ description, lang, meta, title }) {
           content: metaDescription,
         },
       ].concat(meta)}
-    />
-  )
+    >
+      {/* Adding Schema Markup */}
+      <script type="application/ld+json">
+        {JSON.stringify(schemaMarkup)}
+      </script>
+    </Helmet>
+  );
 }
 
 Seo.defaultProps = {
   lang: `en`,
   meta: [],
   description: ``,
-}
+};
 
 Seo.propTypes = {
   description: PropTypes.string,
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string.isRequired,
-}
+};
 
-export default Seo
+export default Seo;
