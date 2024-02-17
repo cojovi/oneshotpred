@@ -37,6 +37,10 @@ function Seo({ description, lang, meta, title }) {
       titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
       meta={[
         {
+          name: `title`,
+          content: "One Shot Predator Management | Fort Worth, TX | Handling all your varmint problems",
+        },
+        {
           name: `description`,
           content: "One Shot Predator Management | Fort Worth, TX | Handling all your varmint problems",
         },
