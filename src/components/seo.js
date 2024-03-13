@@ -23,6 +23,7 @@ const MyPage = () => {
     </>
   );
 };
+
 function Seo({ description, lang, meta, title }) {
   const { site } = useStaticQuery(
     graphql`
