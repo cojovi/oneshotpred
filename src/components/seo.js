@@ -29,9 +29,9 @@ function Seo({ description, lang, meta, title }) {
       query {
         site {
           siteMetadata {
-            title
-            description
-            author
+            title: "One Shot Predator Management - Expert Predator Control Services",
+            description: "Offering professional predator management and control services to safeguard your property. Effective solutions tailored to your needs. Contact us today!",
+            author: "@oneshotpredatormgmt",
           }
         }
       }
