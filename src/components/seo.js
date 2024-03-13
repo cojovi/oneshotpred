@@ -10,6 +10,19 @@ import PropTypes from "prop-types";
 import { Helmet } from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby";
 
+const MyPage = () => {
+  return (
+    <>
+    <Seo
+    title="One Shot Predator Management - Expert Predator Control Services"
+    description="Offering professional predator management and control services to safeguard your property. Effective solutions tailored to your needs. Contact us today!"
+    canonical="https://www.oneshotpredatormgmt.com/"
+    robots="index,follow" // You can omit this for default behavior
+    />
+    {/* The rest of your page content */}
+    </>
+  );
+};
 function Seo({ description, lang, meta, title }) {
   const { site } = useStaticQuery(
     graphql`
