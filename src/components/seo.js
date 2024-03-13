@@ -10,6 +10,17 @@ import PropTypes from "prop-types";
 import { Helmet } from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby";
 
+const MyComponent = () => (
+  <>
+  <Helmet>
+  <title>One Shot Predator Management - Expert Predator Control Services</title>
+  <meta name="description" content="Offering professional predator management and control services to safeguard your property. Effective solutions tailored to your needs. Contact us today!" />
+  {/* other head elements */}
+  </Helmet>
+  {/* rest of your component */}
+  </>
+);
+
 const MyPage = () => {
   return (
     <>
