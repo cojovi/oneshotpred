@@ -11,6 +11,9 @@ const Header = () => {
     <div className="max-w-7xl mx-auto px-8">
       <Fade>
         <div>
+        <h3 className="text-white font-poppins opacity-50 font-semibold mt-20 text-xs xxs:text-xs xs:text-xs sm:text-xs md:text-sm lg:text-xl">
+          OneShotPredatorMgmt.com
+        </h3>
           <h2 className="text-white font-poppins opacity-50 font-semibold mt-20 text-xs xxs:text-xs xs:text-xs sm:text-xs md:text-sm lg:text-xl">
             Swiftly Eliminating Predators with Expert Precision..
           </h2>
