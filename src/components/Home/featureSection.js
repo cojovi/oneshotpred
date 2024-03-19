@@ -7,15 +7,15 @@ const FeatureSection = () => {
       <Fade bottom cascade>
         <div className="w-full flex flex-row justify-between mt-10 xxs:flex-col xs:flex-col sm:flex-row">
           <div className="rounded-xl w-full h-52 flex flex-col content-center justify-center align-middle text-center m-5 bg-gradient-to-r from-lightblack to-lightblack hover:from-purple hover:to-pink transition duration-500 ease-in-out">
-            <h1 className="text-white text-5xl">7K</h1>
-            <h3 className="text-white">Acres Currently Monitored</h3>
+            <h1 className="text-white text-5xl">70K</h1>
+            <h3 className="text-white">Acres Currently Managed</h3>
           </div>
           <div className="rounded-xl w-full h-52 flex flex-col content-center justify-center align-middle text-center m-5 bg-gradient-to-r from-lightblack to-lightblack hover:from-purple hover:to-pink transition duration-500 ease-in-out">
-            <h1 className="text-white text-5xl">3.5K</h1>
-            <h3 className="text-white">Acres Satisfied</h3>
+            <h1 className="text-white text-5xl">175</h1>
+            <h3 className="text-white">Acres Under Survey</h3>
           </div>
           <div className="rounded-xl w-full h-52 flex flex-col content-center justify-center align-middle text-center m-5 bg-gradient-to-r from-lightblack to-lightblack hover:from-purple hover:to-pink transition duration-500 ease-in-out">
-            <h1 className="text-white text-5xl">213</h1>
+            <h1 className="text-white text-5xl">21</h1>
             <h3 className="text-white">Pleased Clients</h3>
           </div>
           <div className="rounded-xl w-full h-52 flex flex-col content-center justify-center align-middle text-center m-5 bg-gradient-to-r from-lightblack to-lightblack hover:from-purple hover:to-pink transition duration-500 ease-in-out">
