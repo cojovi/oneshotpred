@@ -1,8 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: "One Shot Predator Management - Expert Predator Control Services",
+    description: "Offering professional predator management and control services to safeguard your property. Effective solutions tailored to your needs. Contact us today!",
+    author: "@oneshotpredatormgmt", // Replace with your business's social media handle or name.
+    siteUrl: "http://www.oneshotpredatormgmt.com", // Add this line if you want to define a default canonical URL.
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
