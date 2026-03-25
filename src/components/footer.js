@@ -6,9 +6,9 @@ const Footer = () => {
     <div className="max-w-7xl mx-auto p-20 mt-10 bg-lightblack rounded-xl">
       <div className="grid grid-cols-2 xxs:grid-cols-1 lg:grid-cols-2">
         <div>
-          <h1 className="text-white text-4xl text-bold">One Shot Predator Mgmt</h1>
+          <h1 className="text-white text-4xl text-bold">One Shot Project Management</h1>
           <p className="text-white text-sm mt-5 opacity-50">
-            We are the ones who go -creek- in the night.
+            Construction project planning, execution, and delivery leadership.
           </p>
           <h1 className="text-white text-lg mt-20 ">
             © copyright{" "}
@@ -18,19 +18,16 @@ const Footer = () => {
         <div className="place-self-end self-center xxs:hidden lg:block">
           <ul className="text-xl font-poppins font-bold">
             <li>
-              <Link to="/">Demos</Link>
+              <Link to="/about">About</Link>
             </li>
             <li>
-              <Link to="/">Company</Link>
+              <Link to="/pricing">Services</Link>
             </li>
             <li>
-              <Link to="/">Products</Link>
-            </li>{" "}
-            <li>
-              <Link to="/">Portfolio</Link>
+              <Link to="/blog">Insights</Link>
             </li>
             <li>
-              <Link to="/">Blog</Link>
+              <Link to="/contact">Contact</Link>
             </li>
           </ul>
         </div>

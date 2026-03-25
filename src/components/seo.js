@@ -1,39 +1,7 @@
-/**
- * SEO component that queries for data with
- *  Gatsby's useStaticQuery React hook
- *
- * See: https://www.gatsbyjs.com/docs/use-static-query/
- */
-
-import * as React from "react";
-import PropTypes from "prop-types";
-import { Helmet } from "react-helmet";
-import { useStaticQuery, graphql } from "gatsby";
-
-const MyComponent = () => (
-  <>
-  <Helmet>
-  <title>One Shot Predator Management - Expert Predator Control Services</title>
-  <meta name="description" content="Offering professional predator management and control services to safeguard your property. Effective solutions tailored to your needs. Contact us today!" />
-  {/* other head elements */}
-  </Helmet>
-  {/* rest of your component */}
-  </>
-);
-
-const MyPage = () => {
-  return (
-    <>
-    <Seo
-    title="One Shot Predator Management - Expert Predator Control Services"
-    description="Offering professional predator management and control services to safeguard your property. Effective solutions tailored to your needs. Contact us today!"
-    canonical="https://www.oneshotpredatormgmt.com/"
-    robots="index,follow" // You can omit this for default behavior
-    />
-    {/* The rest of your page content */}
-    </>
-  );
-};
+import * as React from "react"
+import PropTypes from "prop-types"
+import { Helmet } from "react-helmet"
+import { useStaticQuery, graphql } from "gatsby"
 
 function Seo({ description, lang, meta, title }) {
   const { site } = useStaticQuery(
@@ -48,45 +16,46 @@ function Seo({ description, lang, meta, title }) {
         }
       }
     `
-  );
+  )
 
-  const metaDescription = description || site.siteMetadata.description;
-  const defaultTitle = site.siteMetadata?.title;
-
-  // Schema Markup for Local Business
+  const metaDescription = description || site.siteMetadata.description
+  const defaultTitle = site.siteMetadata?.title
+  const fullTitle = title || defaultTitle
   const schemaMarkup = {
-    "@context": "http://schema.org",
+    "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": "One Shot Predator Management",
-    "address": {
+    name: "One Shot Project Management",
+    address: {
       "@type": "PostalAddress",
-      "streetAddress": "118 Clyde Dr, Aledo, TX 76008",
-      "addressLocality": "Aledo",
-      "addressRegion": "TX",
-      "postalCode": "76008",
-      "addressCountry": "USA"
+      streetAddress: "118 Clyde Dr, Aledo, TX 76008",
+      addressLocality: "Aledo",
+      addressRegion: "TX",
+      postalCode: "76008",
+      addressCountry: "USA",
     },
-    "geo": {
+    geo: {
       "@type": "GeoCoordinates",
-      "latitude": "32.68541",
-      "longitude": "-97.60558"
+      latitude: "32.68541",
+      longitude: "-97.60558",
     },
-    "telephone": "+1-800-123-4567",
-    "url": "http://www.oneshotpredatormgmt.com",
-    "areaServed": [
+    telephone: "+1-800-123-4567",
+    url: "https://oneshotprojectmgmt.com",
+    description:
+      "Construction project management services including planning, scheduling, vendor coordination, and execution oversight.",
+    areaServed: [
       {
         "@type": "GeoCircle",
-        "geoMidpoint": {
+        geoMidpoint: {
           "@type": "GeoCoordinates",
-          "latitude": "32.68541",
-          "longitude": "-97.60558"
+          latitude: "32.68541",
+          longitude: "-97.60558",
         },
-        "geoRadius": "160934" // 100 miles in meters
-      }
+        geoRadius: "160934",
+      },
     ],
-    "openingHours": "Mo-Sa 08:00-18:00",
-    "sameAs": [] // Add URLs to any of your social media profiles
-  };
+    openingHours: "Mo-Sa 08:00-18:00",
+    sameAs: [],
+  }
 
   return (
     <Helmet
@@ -94,23 +63,23 @@ function Seo({ description, lang, meta, title }) {
         lang,
       }}
       title={title}
-      titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
+      titleTemplate={defaultTitle ? `%s | One Shot Project Management` : null}
       meta={[
         {
-          name: `title`,
-          content: "One Shot Predator Management | Effective Predator Control in Fort Worth, TX",
-        },
-        {
           name: `description`,
-          content: "One Shot Predator Management specializes in effective predator control, offering services throughout Fort Worth, TX, and surrounding areas. Protect your property and livestock with our experienced team.",
+          content: metaDescription,
         },
         {
           property: `og:title`,
-          content: "One Shot Predator Management | Effective Predator Control in Fort Worth, TX",
+          content: fullTitle,
         },
         {
           property: `og:description`,
           content: metaDescription,
+        },
+        {
+          property: `og:url`,
+          content: "https://oneshotprojectmgmt.com",
         },
         {
           property: `og:type`,
@@ -126,7 +95,7 @@ function Seo({ description, lang, meta, title }) {
         },
         {
           name: `twitter:title`,
-          content: title,
+          content: fullTitle,
         },
         {
           name: `twitter:description`,
@@ -134,25 +103,24 @@ function Seo({ description, lang, meta, title }) {
         },
       ].concat(meta)}
     >
-      {/* Adding Schema Markup */}
       <script type="application/ld+json">
         {JSON.stringify(schemaMarkup)}
       </script>
     </Helmet>
-  );
+  )
 }
 
 Seo.defaultProps = {
   lang: `en`,
   meta: [],
-  description: ``,
-};
+  description: `One Shot Project Management delivers construction planning, scheduling, and field coordination for reliable project execution.`,
+}
 
 Seo.propTypes = {
   description: PropTypes.string,
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string.isRequired,
-};
+}
 
-export default Seo;
+export default Seo

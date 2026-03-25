@@ -6,67 +6,40 @@ import Fade from "react-reveal/Fade"
 const BlogsContainer = () => {
   const blogData = [
     {
-      img:
-        "https://i.imgur.com/TftDpeHl.png",
-      heading: "Efficiency in Predator Removal: Why Speed Matters.",
+      img: "https://image.pollinations.ai/prompt/construction%20planning%20session%20with%20gantt%20chart%20and%20blueprints%20realistic%20photo?width=1200&height=900&seed=51&model=flux",
+      heading: "How to Build a Reliable Construction Baseline Schedule.",
       para:
-      " In the world of predator management, timing is everything. A swift response not only ensures immediate relief but also prevents potential disruptions to the delicate ecosystem of your farm. OSPM's commitment to rapid action is rooted in our understanding of the urgent nature of predator threats.  Our efficiency is a product of meticulous planning, expert skills, and a deep respect for both our clients and the wildlife we manage. By combining speed with precision, OSPM delivers solutions that are not just quick, but also effective and humane. This balance is what makes us leaders in predator management, providing peace of mind with every operation.,",
+        "A schedule is only useful when crews can execute it. We cover sequencing, milestone handoffs, float strategy, and reporting rhythms that keep work moving.",
     },
     {
-      img:
-        "https://i.imgur.com/9c2MRAul.png",
-      heading: "Adapting to Every Challenge Nature Offers.",
+      img: "https://image.pollinations.ai/prompt/preconstruction%20checklist%20meeting%20in%20site%20office%20realistic%20photo?width=1200&height=900&seed=52&model=flux",
+      heading: "Pre-Construction Checklists That Prevent Costly Delays.",
       para:
-      " Nature's unpredictability requires a predator management service that's as adaptable as the wildlife it handles. At OSPM, we pride ourselves on our ability to navigate and operate effectively in any environment – be it dense woodlands, rolling hills, or open fields. Our adaptability is not just a skill; it's our promise to protect your land, no matter its terrain. Our team's deep understanding of animal behavior, coupled with state-of-the-art technology, enables us to provide tailored solutions for every situation. Whether it's a cunning coyote or a stealthy bobcat, OSPM is equipped to handle the challenge, ensuring the safety of your farm and maintaining the natural balance.",
+        "From permit readiness to trade procurement and long-lead materials, this checklist helps teams reduce uncertainty before mobilization.",
     },
     {
-      img:
-        "https://i.imgur.com/jcbic7Ol.png",
-      heading: "The Silent Guardians of Your Farm.",
+      img: "https://image.pollinations.ai/prompt/owner%20architect%20contractor%20meeting%20around%20table%20realistic%20photo?width=1200&height=900&seed=53&model=flux",
+      heading: "Running Weekly OAC Meetings That Actually Resolve Issues.",
       para:
-      " In the stillness of dusk, when shadows grow long and the farm settles for the night, our team at OSPM takes action. We are the silent guardians, ensuring that the peace of your fields and the safety of your livestock are undisturbed. Our approach to predator management is not just about removal; it's about restoring balance and tranquility to your land.  OSPM's unique blend of military precision and hunting expertise makes us unparalleled in the field of predator control. With every mission, we bring a commitment to discretion and efficiency, ensuring that your farm remains a safe haven for its rightful inhabitants. Trust in OSPM to be your silent, vigilant protectors.",
+        "A structured owner-architect-contractor meeting can eliminate drift. Learn agenda formats, escalation rules, and follow-up systems that drive action.",
     },
     {
-      img:
-        "https://i.imgur.com/5dRCCHql.png",
-      heading: "Dawn of Safety: OSPM's Early Morning Vigilance.",
+      img: "https://image.pollinations.ai/prompt/construction%20quality%20inspection%20team%20checking%20finishes%20realistic%20photo?width=1200&height=900&seed=54&model=flux",
+      heading: "Field Quality Walks: Catching Rework Before It Spreads.",
       para:
-      " As the first light of dawn breaks over the horizon, OSPM's team is already at work, ensuring that your farm awakens to safety and serenity. Our early morning patrols are a cornerstone of our commitment to protecting your livelihood. In these quiet hours, our vigilance is heightened, preempting any threats that nocturnal predators might pose.  This proactive approach is what sets OSPM apart. We believe in not just responding to threats, but in preventing them. As the farm stirs to life, our clients can rest assured that their fields and livestock have been guarded throughout the night, ensuring a peaceful start to the day.",
+        "Daily and weekly quality routines reduce punch list fatigue. We break down what to inspect, who signs off, and how to document closeouts effectively.",
     },
     {
-      img:
-        "https://i.imgur.com/8wZLW4Vl.png",
-      heading: "Innovative Technology in Predator Management.",
+      img: "https://image.pollinations.ai/prompt/construction%20cost%20control%20analysis%20dashboard%20on%20tablet%20realistic%20photo?width=1200&height=900&seed=55&model=flux",
+      heading: "Construction Budget Tracking Without Spreadsheet Chaos.",
       para:
-      " At OSPM, we harness the power of technology to stay ahead in predator management. Our use of advanced tools, like high-tech drones, exemplifies our innovative approach. These drones enable us to survey large areas of land quickly and efficiently, identifying potential predator threats before they become a problem.  This technology not only enhances our efficiency but also ensures the safety of both the wildlife and your farm. By integrating these cutting-edge tools into our strategy, OSPM provides a service that is not just effective but also respectful of the environment and the natural habitats we work within.",
+        "We outline a lightweight reporting model for commitments, approved changes, forecast-at-completion, and variance tracking your stakeholders can trust.",
     },
     {
-      img:
-        "https://i.imgur.com/5Bk1o46l.png",
-      heading: "The Art of Stealth in Predator Control.",
+      img: "https://image.pollinations.ai/prompt/subcontractor%20coordination%20walkthrough%20at%20commercial%20build%20realistic%20photo?width=1200&height=900&seed=56&model=flux",
+      heading: "Subcontractor Coordination During High-Overlap Phases.",
       para:
-      " Stealth is an art form at OSPM, and it's crucial in our approach to predator control. As the shadows lengthen and the landscape transitions to twilight, our team employs tactics honed through years of experience. This expertise allows us to navigate various terrains silently, effectively managing predator threats without disruption to the local ecosystem.  Our strategic approach is designed to ensure minimal disturbance to both the wildlife and the farm environment. It's this delicate balance between assertive action and respectful management that defines our service, making OSPM a trusted name in predator control.",
-    },
-    {
-      img:
-        "https://i.imgur.com/GUNSqtDl.png",
-      heading: "Expert Tracking: The Key to Effective Predator Management.",
-      para:
-      " At OSPM, our expertise in tracking stands as a fundamental pillar of our predator management strategy. Understanding animal movement patterns is crucial in preemptively addressing potential threats. Our team, equipped with years of experience in wildlife tracking, applies this knowledge to ensure your farm's safety.  This skill set not only allows us to be efficient but also humane in our approach. By accurately identifying and understanding predator behavior, we can implement targeted removal strategies that minimize disruption to the ecosystem. It's this blend of expertise and respect for nature that defines OSPM's service excellence.",
-    },
-    {
-      img:
-        "https://i.imgur.com/nqqpTPZl.png",
-      heading: "Balancing Ecosystems: OSPM's Commitment to Environmental Stewardship.",
-      para:
-      " At OSPM, we understand that predator management is about more than just removal; it's about maintaining the balance of the ecosystem. Our approach to predator control is deeply rooted in environmental stewardship. We're committed to not only protecting your farms but also ensuring the health of the local wildlife populations.  Our methods are designed to address immediate concerns while considering long-term ecological impacts. This commitment to environmental balance makes OSPM a responsible choice for farmers and landowners who value both their property's safety and the natural world around them.",
-    },
-    {
-      img:
-        "https://i.imgur.com/TT6Iy5il.png",
-      heading: "Beyond Removal: OSPM's Comprehensive Wildlife Management Solutions.",
-      para:
-      " Predator management is just one aspect of the comprehensive wildlife solutions offered by OSPM. We believe in a holistic approach, addressing not just the immediate threats but also providing insights and strategies for long-term wildlife management.  Our services extend to habitat assessment, wildlife behavior education, and preventive measures to ensure sustainable coexistence with nature. By choosing OSPM, you're not just getting a predator removal service; you're investing in a partnership that values the safety and health of your entire agricultural ecosystem.",
+        "When mechanical, electrical, and finish work stack up, proactive coordination prevents stoppages. We cover look-ahead planning that keeps all trades productive.",
     },
   ]
   return (
@@ -92,7 +65,7 @@ const BlogsContainer = () => {
       <div className="w-full h-72 mt-10 bg-gradient-to-r from-pink to-purple rounded-xl flex flex-col items-center justify-center">
         <h1 className="font-poppins font-bold text-3xl">Stay in the loop</h1>
         <h2 className="text-lg mt-2 opacity-50">
-          Join our newsletter to get top news before anyone else
+          Join our newsletter for practical project delivery tips
         </h2>
         <div className="flex-row mt-10">
           <Input placeholder="email."></Input>

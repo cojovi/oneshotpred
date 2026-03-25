@@ -1,9 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: "One Shot Predator Management - Expert Predator Control Services",
-    description: "Offering professional predator management and control services to safeguard your property. Effective solutions tailored to your needs. Contact us today!",
-    author: "@oneshotpredatormgmt", // Replace with your business's social media handle or name.
-    siteUrl: "http://www.oneshotpredatormgmt.com", // Add this line if you want to define a default canonical URL.
+    title: "One Shot Project Management - Construction Project Leadership",
+    description:
+      "One Shot Project Management delivers construction planning, scheduling, vendor coordination, and on-site oversight to keep projects on time and on budget.",
+    author: "@oneshotprojectmgmt",
+    siteUrl: "https://oneshotprojectmgmt.com",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -20,8 +21,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `One Shot Project Management`,
+        short_name: `OSPM`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,

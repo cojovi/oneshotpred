@@ -13,68 +13,58 @@ const PricingFAQ = () => {
         <div className="grid grid-cols-2 gap-8  text-left mt-10 xxs:grid-cols-1 sm:grid-cols-2">
           <div className="xxs:p-2 sm:p-0">
             <h1 className="font-bold text-2xl font-poppins xxs:text-lg sm:text-2xl">
-              Publshing Industries for previewing layouts?
+              Do you work with residential or commercial projects?
             </h1>
             <p className="mt-2 text-sm opacity-50">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book.
+              We support both. Most clients are commercial renovation and
+              light-industrial teams, but we also provide project controls for
+              high-scope residential builds.
             </p>
           </div>
           <div className="xxs:p-2 sm:p-0">
             <h1 className="font-bold text-2xl font-poppins xxs:text-lg sm:text-2xl">
-              Publshing Industries for previewing layouts?
+              Can you join a project that is already underway?
             </h1>
             <p className="mt-2 text-sm opacity-50">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book.
+              Yes. We can assess current status, rebuild practical schedules, and
+              establish reporting cadence without disrupting active field work.
             </p>
           </div>
           <div className="xxs:p-2 sm:p-0">
             <h1 className="font-bold text-2xl font-poppins xxs:text-lg sm:text-2xl">
-              Publshing Industries for previewing layouts?
+              How often will we receive updates?
             </h1>
             <p className="mt-2 text-sm opacity-50">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book.
+              Weekly status reports are standard. High-risk phases can include
+              additional check-ins and daily coordination summaries.
             </p>
           </div>
           <div className="xxs:p-2 sm:p-0">
             <h1 className="font-bold text-2xl font-poppins xxs:text-lg sm:text-2xl">
-              Publshing Industries for previewing layouts?
+              Do you replace our general contractor?
             </h1>
             <p className="mt-2 text-sm opacity-50">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book.
+              No. We collaborate with your GC and trade teams to improve decision
+              speed, accountability, and owner visibility.
             </p>
           </div>
           <div className="xxs:p-2 sm:p-0">
             <h1 className="font-bold text-2xl font-poppins xxs:text-lg sm:text-2xl">
-              Publshing Industries for previewing layouts?
+              What regions do you serve?
             </h1>
             <p className="mt-2 text-sm opacity-50">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book.
+              We primarily serve Texas-based projects and remote-support clients
+              in neighboring states.
             </p>
           </div>
           <div className="xxs:p-2 sm:p-0">
             <h1 className="font-bold text-2xl font-poppins xxs:text-lg sm:text-2xl">
-              Publshing Industries for previewing layouts?
+              How do we get started?
             </h1>
             <p className="mt-2 text-sm opacity-50">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book.
+              Share your scope, timeline, and biggest constraints through our
+              contact form. We will schedule a discovery call and recommend the
+              right package.
             </p>
           </div>
         </div>

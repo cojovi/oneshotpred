@@ -6,73 +6,65 @@ const PricingHeader = () => {
     <div className="max-w-7xl mx-auto mt-10 font-poppins text-white flex flex-col items-center">
       <Fade bottom>
         <h1 className="text-6xl font-bold m-5 xxs:text-xl sm:text-4xl lg:text-6xl">
-          Simple, transparent pricing
+          Service packages built for your project stage
         </h1>
         <h2 className="text-base opacity-50 text-center xxs:text-sm sm:text-lg">
-          Get the Circle plan that fits your needsata a special introductory
-          price.
+          Choose the support level that fits your timeline, team structure, and
+          delivery complexity.
         </h2>
       </Fade>
       <Fade bottom cascade>
         <div className="grid grid-cols-2 gap-4 mt-10 xxs:grid-cols-1 sm:grid-cols-2">
           <div className="bg-lightblack p-10 rounded-xl">
             <h2 className="text-2xl text-gradient bg-gradient-to-r from-pink to-purple ">
-              Essential
+              Project Setup
             </h2>
-            <h1 className="text-4xl mt-2 font-bold">$49/Mo</h1>
+            <h1 className="text-4xl mt-2 font-bold">$1,200</h1>
             <h3 className="text-sm mt-2 opacity-50">
-              Better insights for growing businesses that want more customers.
+              Ideal for owners who need a clear plan before mobilization.
             </h3>
             <ul className="mt-5">
               <li className="text-sm opacity-70 py-2">
-                {" "}
-                - malesuada fames ac turpis egestas
+                - Scope and stakeholder kickoff workshop
               </li>
               <li className="text-sm opacity-70 py-2">
-                {" "}
-                - malesuada fames ac turpis egestas
+                - Baseline schedule and milestone map
               </li>
               <li className="text-sm opacity-70 py-2">
-                {" "}
-                - malesuada fames ac turpis egestas
+                - Procurement and risk readiness checklist
               </li>
             </ul>
             <button className="mt-5 px-5 bg-gradient-to-r from-pink to-purple p-2">
-              Start Free Trial
+              Request Setup Plan
             </button>
           </div>
           <div className="bg-lightblack p-10 rounded-xl">
             <h2 className="text-2xl text-gradient bg-gradient-to-r from-pink to-purple ">
-              Premium
+              Full Project Oversight
             </h2>
-            <h1 className="text-4xl mt-2 font-bold">$79/Mo</h1>
+            <h1 className="text-4xl mt-2 font-bold">$3,500/mo</h1>
             <h3 className="text-sm mt-2 opacity-50">
-              Better insights for growing businesses that want more customers.
+              End-to-end coordination for active projects with multiple trades.
             </h3>
             <ul className="mt-5">
               <li className="text-sm opacity-70 py-2">
-                {" "}
-                - malesuada fames ac turpis egestas
+                - Weekly owner reporting and action log
               </li>
               <li className="text-sm opacity-70 py-2">
-                {" "}
-                - malesuada fames ac turpis egestas
+                - Trade sequencing and issue resolution
               </li>
               <li className="text-sm opacity-70 py-2">
-                {" "}
-                - malesuada fames ac turpis egestas
+                - Budget tracking and change-order controls
               </li>
               <li className="text-sm opacity-70 py-2">
-                {" "}
-                - malesuada fames ac turpis egestas
+                - Quality/safety walkthrough coordination
               </li>
               <li className="text-sm opacity-70 py-2">
-                {" "}
-                - malesuada fames ac turpis egestas
+                - Closeout and handover planning
               </li>
             </ul>
             <button className="mt-5 px-5 bg-gradient-to-r from-pink to-purple p-2">
-              Start Free Trial
+              Book Discovery Call
             </button>
           </div>
         </div>

@@ -15,7 +15,11 @@ const Contact = () => {
               Let's Connect
             </h1>
             <p className="text-lg mt-2 opacity-50 w-3/4 xxs:text-xs xxs:w-full sm:text-sm sm:w-3/4">
-              Ready to safeguard your farm against predators? Reach out to us at OSPM. We're here to provide you with expert predator management solutions tailored to your specific needs. Our team is committed to delivering effective, discreet, and humane wildlife control, ensuring the safety and tranquility of your property. Contact us today to discuss how we can assist you in protecting your land and livestock. At OSPM, your peace of mind is our top priority.
+              Planning a renovation, tenant improvement, or ground-up project?
+              Reach out to One Shot Project Management for scheduling, budgeting,
+              procurement, and field coordination support. Tell us your timeline
+              and goals, and we will build a clear project delivery plan with your
+              team.
             </p>
             <form className="mt-5">
               <div className="flex xxs:flex-col sm:flex-row">
@@ -36,9 +40,9 @@ const Contact = () => {
                 </div>
               </div>
               <textarea
-                className="mt-5 w-full bg-white bg-opacity-20 rounded-xl p-5"
+                className="mt-5 w-full bg-white bg-opacity-20 rounded-xl p-5 text-white"
                 rows="5"
-                placeholder="How can we help you?"
+                placeholder="Tell us about your project scope, timeline, and goals."
               ></textarea>
               <Button
                 title="Send us a message"
@@ -50,7 +54,7 @@ const Contact = () => {
           <div className="w-1/4 overflow-hidden rounded-xl m-5 xxs:hidden sm:block">
             <img
               className="object-cover h-full w-full"
-              src="https://i.imgur.com/BXHexwpl.png"
+              src="https://image.pollinations.ai/prompt/construction%20project%20manager%20professional%20portrait%20realistic%20photo?width=500&height=900&seed=67&model=flux"
             ></img>
           </div>
         </div>

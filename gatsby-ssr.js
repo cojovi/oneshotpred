@@ -3,5 +3,29 @@
  *
  * See: https://www.gatsbyjs.com/docs/ssr-apis/
  */
+const React = require("react")
 
-// You can delete this file if you're not using it
+exports.onRenderBody = ({ setPreBodyComponents }) => {
+  setPreBodyComponents([
+    React.createElement("script", {
+      key: "theme-init",
+      dangerouslySetInnerHTML: {
+        __html: `
+          (function() {
+            try {
+              var stored = localStorage.getItem("theme");
+              var theme = stored === "dark" ? "dark" : "light";
+              if (theme === "dark") {
+                document.documentElement.classList.add("dark");
+              } else {
+                document.documentElement.classList.remove("dark");
+              }
+            } catch (e) {
+              document.documentElement.classList.remove("dark");
+            }
+          })();
+        `,
+      },
+    }),
+  ])
+}
