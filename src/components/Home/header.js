@@ -2,6 +2,7 @@ import React from "react"
 import Input from "../Atoms/input"
 import Button from "../Atoms/button"
 import Fade from "react-reveal/Fade"
+import HeroImage from "../../images/OSPM_hero_img.png"
 
 const Header = () => {
   return (
@@ -38,7 +39,7 @@ const Header = () => {
         <div className="w-full overflow-hidden rounded-xl relative aspect-[16/9]">
           <img
             className="w-full h-full object-cover"
-            src="https://image.pollinations.ai/prompt/cinematic%20construction%20project%20management%20scene%20with%20team%20reviewing%20blueprints%20on%20active%20commercial%20site%20at%20golden%20hour%20professional%20realistic%20photo?width=1600&height=900&seed=303&model=flux"
+            src={HeroImage}
             alt="Construction project team planning"
           ></img>
           <div className="absolute inset-0 hero-overlay"></div>
