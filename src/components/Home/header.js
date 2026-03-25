@@ -7,40 +7,49 @@ const Header = () => {
   return (
     <div className="max-w-7xl mx-auto px-8">
       <Fade>
-        <div>
-          <h3 className="text-white font-poppins font-semibold text-2xl xxs:text-2xl xs:text-2xl sm:text-lg md:text-2xl lg:text-4xl xl:text-7xl 2xl:text-8xl">
-            OneShotProjectMgmt.com
+        <div className="pt-6">
+          <h3 className="text-theme-muted font-poppins font-semibold tracking-widest uppercase text-xs sm:text-sm">
+            One Shot Project Management
           </h3>
-          <h2 className="text-white font-poppins opacity-50 font-semibold mt-20 text-xs xxs:text-xs xs:text-xs sm:text-xs md:text-sm lg:text-xl">
-            Construction projects coordinated with clear timelines and accountable execution.
-          </h2>
-
-          <h1 className="text-white font-poppins font-semibold text-2xl xxs:text-2xl xs:text-2xl sm:text-lg md:text-2xl lg:text-4xl xl:text-7xl 2xl:text-8xl">
-            Building projects with <br></br>{" "}
+          <h1 className="text-theme-primary font-poppins font-semibold mt-4 text-4xl xxs:text-3xl xs:text-4xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
+            Construction leadership for <br></br>{" "}
             <span className="text-gradient bg-gradient-to-r from-pink to-purple">
-              precision and momentum.
+              precision and momentum
             </span>
           </h1>
+          <h2 className="text-theme-muted font-poppins mt-6 text-sm xxs:text-sm sm:text-base md:text-lg lg:text-xl max-w-4xl leading-relaxed">
+            We align scope, schedule, and trade coordination so your team can deliver
+            with confidence from kickoff through closeout.
+          </h2>
         </div>
       </Fade>
       <Fade bottom>
-        <div className="mt-10 xxs:flex xxs:flex-row sm:block">
+        <div className="mt-8 flex flex-col xxs:flex-col sm:flex-row sm:items-center gap-3 sm:gap-4">
           <Input placeholder="email."></Input>
           <Button
-            colorClass="bg-gradient-to-r from-pink to-purple "
+            colorClass="gradient-industrial"
             title="Request Project Consultation"
             textColor="text-white"
-            marginClass="ml-5"
+            marginClass=""
           ></Button>
         </div>
       </Fade>
-      <div className="max-w-7xl mx-auto mt-10">
-        <div className="w-full h-auto overflow-hidden rounded-xl">
+      <div className="max-w-7xl mx-auto mt-12">
+        <div className="w-full overflow-hidden rounded-xl relative aspect-[16/9]">
           <img
-            className="w-full h-full"
-            src="https://image.pollinations.ai/prompt/professional%20construction%20project%20manager%20reviewing%20blueprints%20with%20crew%20at%20modern%20commercial%20jobsite%20realistic%20photo?width=1600&height=900&seed=31&model=flux"
+            className="w-full h-full object-cover"
+            src="https://image.pollinations.ai/prompt/cinematic%20construction%20project%20management%20scene%20with%20team%20reviewing%20blueprints%20on%20active%20commercial%20site%20at%20golden%20hour%20professional%20realistic%20photo?width=1600&height=900&seed=303&model=flux"
             alt="Construction project team planning"
           ></img>
+          <div className="absolute inset-0 hero-overlay"></div>
+          <div className="absolute left-6 bottom-6 sm:left-10 sm:bottom-10 max-w-xl">
+            <p className="text-white text-xs sm:text-sm tracking-widest uppercase opacity-80">
+              Field Coordination + Project Controls
+            </p>
+            <p className="text-white text-lg sm:text-2xl font-poppins font-semibold leading-tight mt-2">
+              Build once, build right, and keep every milestone visible.
+            </p>
+          </div>
         </div>
       </div>
     </div>

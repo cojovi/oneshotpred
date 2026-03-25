@@ -3,20 +3,20 @@ import React from "react"
 
 const Footer = () => {
   return (
-    <div className="max-w-7xl mx-auto p-20 mt-10 bg-lightblack rounded-xl">
+    <div className="max-w-7xl mx-auto p-12 mt-16 surface-card rounded-xl">
       <div className="grid grid-cols-2 xxs:grid-cols-1 lg:grid-cols-2">
         <div>
-          <h1 className="text-white text-4xl text-bold">One Shot Project Management</h1>
-          <p className="text-white text-sm mt-5 opacity-50">
+          <h1 className="text-theme-primary text-4xl text-bold font-poppins">One Shot Project Management</h1>
+          <p className="text-theme-muted text-sm mt-5">
             Construction project planning, execution, and delivery leadership.
           </p>
-          <h1 className="text-white text-lg mt-20 ">
+          <h1 className="text-theme-muted text-sm mt-16 ">
             © copyright{" "}
-            <a href="https://www.cojovi.com">cojovi web solutions @ cojovi.com</a>
+            <a className="text-theme-primary underline" href="https://www.cojovi.com">cojovi web solutions @ cojovi.com</a>
           </h1>
         </div>
         <div className="place-self-end self-center xxs:hidden lg:block">
-          <ul className="text-xl font-poppins font-bold">
+          <ul className="text-xl font-poppins font-bold text-theme-primary">
             <li>
               <Link to="/about">About</Link>
             </li>

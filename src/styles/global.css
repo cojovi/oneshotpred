@@ -4,26 +4,40 @@
 
 :root {
   color-scheme: light;
+  --bg-primary: #f5f6f8;
+  --bg-surface: #ffffff;
+  --bg-surface-strong: #e9edf2;
+  --text-primary: #15202b;
+  --text-muted: #4f5d6b;
+  --border-subtle: #d3dbe3;
+  --accent-from: #c7773b;
+  --accent-to: #5f6e7f;
+  --hero-overlay-start: rgba(12, 17, 23, 0.6);
+  --hero-overlay-end: rgba(12, 17, 23, 0.1);
 }
 
 html.dark {
   color-scheme: dark;
+  --bg-primary: #0d1217;
+  --bg-surface: #171f28;
+  --bg-surface-strong: #242f3b;
+  --text-primary: #f3f6f8;
+  --text-muted: #aeb8c2;
+  --border-subtle: #344556;
+  --accent-from: #d0884e;
+  --accent-to: #7d8ea0;
+  --hero-overlay-start: rgba(6, 10, 14, 0.7);
+  --hero-overlay-end: rgba(6, 10, 14, 0.15);
 }
 
 @layer base {
   a {
-    color: #0f172a;
+    color: var(--text-primary);
   }
   body {
-    background-color: #f3f4f6;
-    color: #0f172a;
-  }
-  html.dark a {
-    color: white;
-  }
-  html.dark body {
-    background-color: #0b0b0b;
-    color: #ffffff;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    transition: background-color 180ms ease, color 180ms ease;
   }
 }
 
@@ -33,25 +47,39 @@ html.dark {
     -webkit-text-fill-color: transparent;
   }
 
-  html:not(.dark) .bg-lightblack {
-    background-color: #ffffff;
-    border: 1px solid #e5e7eb;
+  .surface-card {
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border-subtle);
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
   }
 
-  html:not(.dark) .text-white {
-    color: #111827;
+  .surface-card-strong {
+    background-color: var(--bg-surface-strong);
+    border: 1px solid var(--border-subtle);
+    box-shadow: 0 14px 32px rgba(15, 23, 42, 0.12);
   }
 
-  html:not(.dark) .opacity-50,
-  html:not(.dark) .opacity-60,
-  html:not(.dark) .opacity-70 {
-    opacity: 0.8;
+  .text-theme-primary {
+    color: var(--text-primary);
   }
 
-  html:not(.dark) .from-lightblack,
-  html:not(.dark) .to-lightblack {
-    --tw-gradient-from: #ffffff;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(255 255 255 / 0));
-    --tw-gradient-to: #f3f4f6;
+  .text-theme-muted {
+    color: var(--text-muted);
+  }
+
+  .gradient-industrial {
+    background-image: linear-gradient(
+      120deg,
+      var(--accent-from) 0%,
+      var(--accent-to) 100%
+    );
+  }
+
+  .hero-overlay {
+    background-image: linear-gradient(
+      180deg,
+      var(--hero-overlay-start) 0%,
+      var(--hero-overlay-end) 100%
+    );
   }
 }

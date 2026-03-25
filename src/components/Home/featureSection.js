@@ -3,34 +3,34 @@ import Fade from "react-reveal/Fade"
 
 const FeatureSection = () => {
   return (
-    <div className="max-w-7xl mx-auto ">
+    <div className="max-w-7xl mx-auto mt-14">
       <Fade bottom cascade>
-        <div className="w-full flex flex-row justify-between mt-10 xxs:flex-col xs:flex-col sm:flex-row">
-          <div className="rounded-xl w-full h-52 flex flex-col content-center justify-center align-middle text-center m-5 bg-gradient-to-r from-lightblack to-lightblack hover:from-purple hover:to-pink transition duration-500 ease-in-out">
-            <h1 className="text-white text-5xl">125+</h1>
-            <h3 className="text-white">Projects Delivered</h3>
+        <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          <div className="rounded-xl h-44 flex flex-col justify-center text-center surface-card transition duration-500 ease-in-out hover:surface-card-strong">
+            <h1 className="text-theme-primary text-5xl font-poppins font-bold">125+</h1>
+            <h3 className="text-theme-muted mt-2">Projects Delivered</h3>
           </div>
-          <div className="rounded-xl w-full h-52 flex flex-col content-center justify-center align-middle text-center m-5 bg-gradient-to-r from-lightblack to-lightblack hover:from-purple hover:to-pink transition duration-500 ease-in-out">
-            <h1 className="text-white text-5xl">94%</h1>
-            <h3 className="text-white">On-Time Milestones</h3>
+          <div className="rounded-xl h-44 flex flex-col justify-center text-center surface-card transition duration-500 ease-in-out hover:surface-card-strong">
+            <h1 className="text-theme-primary text-5xl font-poppins font-bold">94%</h1>
+            <h3 className="text-theme-muted mt-2">On-Time Milestones</h3>
           </div>
-          <div className="rounded-xl w-full h-52 flex flex-col content-center justify-center align-middle text-center m-5 bg-gradient-to-r from-lightblack to-lightblack hover:from-purple hover:to-pink transition duration-500 ease-in-out">
-            <h1 className="text-white text-5xl">38</h1>
-            <h3 className="text-white">Active Trade Partners</h3>
+          <div className="rounded-xl h-44 flex flex-col justify-center text-center surface-card transition duration-500 ease-in-out hover:surface-card-strong">
+            <h1 className="text-theme-primary text-5xl font-poppins font-bold">38</h1>
+            <h3 className="text-theme-muted mt-2">Active Trade Partners</h3>
           </div>
-          <div className="rounded-xl w-full h-52 flex flex-col content-center justify-center align-middle text-center m-5 bg-gradient-to-r from-lightblack to-lightblack hover:from-purple hover:to-pink transition duration-500 ease-in-out">
-            <h1 className="text-white text-5xl">0</h1>
-            <h3 className="text-white">Safety Compromises</h3>
+          <div className="rounded-xl h-44 flex flex-col justify-center text-center surface-card transition duration-500 ease-in-out hover:surface-card-strong">
+            <h1 className="text-theme-primary text-5xl font-poppins font-bold">0</h1>
+            <h3 className="text-theme-muted mt-2">Safety Compromises</h3>
           </div>
         </div>
       </Fade>
       <Fade bottom cascade>
-        <div className="mt-10 px-8">
-          <h1 className="text-white text-7xl font-bold xxs:text-2xl xs:text-2xl sm:text-3xl lg:text-5xl xl:text-7xl">
+        <div className="mt-16 px-2 sm:px-6">
+          <h1 className="text-theme-primary text-7xl font-bold xxs:text-3xl xs:text-4xl sm:text-4xl lg:text-6xl xl:text-7xl font-poppins">
             From pre-construction planning <br></br>
             to final turnover
           </h1>
-          <h2 className="text-white text-sm mt-5 opacity-50">
+          <h2 className="text-theme-muted text-sm mt-6 leading-relaxed sm:text-base">
             One Shot Project Management leads construction projects with a practical,
             systems-first approach tailored to your site, budget, and timeline.
             We build project roadmaps, align subcontractors, lock procurement plans,
@@ -44,28 +44,28 @@ const FeatureSection = () => {
         </div>
       </Fade>
       <Fade bottom cascade>
-        <div className="mt-10 flex flex-row justify-space xxs:flex-col xs:flex-col sm:flex-row">
-          <div className="w-2/6 bg-gradient-to-r from-pink to-purple p-8 rounded-xl m-5 xxs:w-full xs:w-full sm:w-2/6">
+        <div className="mt-14 flex flex-row justify-space xxs:flex-col xs:flex-col sm:flex-row gap-5">
+          <div className="w-2/6 gradient-industrial p-8 rounded-xl xxs:w-full xs:w-full sm:w-2/6">
             <h1 className="text-white text-4xl">Stats</h1>
             <div className="mt-5">
               <div>
-                <h2 className="text-white opacity-50 text-xl">Year Founded</h2>
+                <h2 className="text-white opacity-80 text-xl">Year Founded</h2>
                 <h1 className="text-white text-sm">2022</h1>
               </div>
               <div className="mt-5">
-                <h2 className="text-white opacity-50 text-xl">Client Retention</h2>
+                <h2 className="text-white opacity-80 text-xl">Client Retention</h2>
                 <h1 className="text-white text-sm">96%</h1>
               </div>
               <div className="mt-5">
-                <h2 className="text-white opacity-50 text-xl">Team Members</h2>
+                <h2 className="text-white opacity-80 text-xl">Team Members</h2>
                 <h1 className="text-white text-sm">8</h1>
               </div>
             </div>
           </div>
 
-          <div className="w-4/6 bg-lightblack p-8 rounded-xl m-5 xxs:w-full xs:w-full sm:w-4/6">
-            <h1 className="text-white text-4xl">Our Core Behaviours</h1>
-            <p className="mt-10 text-white opacity-50">
+          <div className="w-4/6 surface-card p-8 rounded-xl xxs:w-full xs:w-full sm:w-4/6">
+            <h1 className="text-theme-primary text-4xl font-poppins font-semibold">Our Core Behaviours</h1>
+            <p className="mt-8 text-theme-muted leading-relaxed">
               We operate with clarity, accountability, and urgency. Every project
               has a defined responsibility matrix, transparent reporting cadence,
               and measurable milestone ownership.<br></br>
@@ -80,11 +80,11 @@ const FeatureSection = () => {
         </div>
       </Fade>
       <Fade bottom cascade>
-        <div className="mt-10 px-8">
-          <h1 className="text-white text-7xl font-bold xxs:text-2xl xs:text-3xl sm:text-5xl lg:text-7xl">
+        <div className="mt-16 px-2 sm:px-6">
+          <h1 className="text-theme-primary text-7xl font-bold font-poppins xxs:text-3xl xs:text-4xl sm:text-5xl lg:text-7xl">
             Work more easily with everyone
           </h1>
-          <h2 className="text-white text-sm mt-5 opacity-50">
+          <h2 className="text-theme-muted text-sm mt-5 leading-relaxed sm:text-base">
             Construction success depends on communication discipline. Our team
             builds shared schedules, publishes weekly action summaries, and keeps
             every stakeholder synced on budget, procurement, inspections, and
@@ -95,31 +95,31 @@ const FeatureSection = () => {
         </div>
       </Fade>
       <Fade bottom cascade>
-        <div className="mt-10 flex flex-row justify-space xxs:flex-col xs:flex-col sm:flex-row">
-          <div className="w-1/3 bg-gradient-to-r from-pink to-purple p-8 rounded-xl m-5 xxs:w-full xs:w-full sm:w-1/3">
+        <div className="mt-12 flex flex-row justify-space xxs:flex-col xs:flex-col sm:flex-row gap-5">
+          <div className="w-1/3 gradient-industrial p-8 rounded-xl xxs:w-full xs:w-full sm:w-1/3">
             <h1 className="text-white text-2xl">
               Fast Startup and Mobilization<br></br>
             </h1>
-            <p className="mt-10 text-white opacity-50 text-sm">
+            <p className="mt-6 text-white opacity-80 text-sm leading-relaxed">
               We stand projects up quickly with clear scopes, baseline schedules,
               and procurement alignment so crews can execute without delay.
             </p>
           </div>
 
-          <div className="w-1/3 bg-lightblack p-8 rounded-xl m-5 xxs:w-full xs:w-full sm:w-1/3">
-            <h1 className="text-white text-2xl">
+          <div className="w-1/3 surface-card p-8 rounded-xl xxs:w-full xs:w-full sm:w-1/3">
+            <h1 className="text-theme-primary text-2xl">
               Operational Excellence,<br></br>Any Location
             </h1>
-            <p className="mt-10 text-white opacity-50 text-sm">
+            <p className="mt-6 text-theme-muted text-sm leading-relaxed">
               From tenant improvements to multi-phase commercial builds, our
               process scales to site complexity while preserving quality and pace.
             </p>
           </div>
-          <div className="w-1/3 bg-lightblack p-8 rounded-xl m-5 xxs:w-full xs:w-full sm:w-1/3">
-            <h1 className="text-white text-2xl">
+          <div className="w-1/3 surface-card p-8 rounded-xl xxs:w-full xs:w-full sm:w-1/3">
+            <h1 className="text-theme-primary text-2xl">
               Seamless Communication<br></br>and Collaboration
             </h1>
-            <p className="mt-10 text-white opacity-50 text-sm">
+            <p className="mt-6 text-theme-muted text-sm leading-relaxed">
               Our dashboards and reporting cadence keep owners informed and crews
               accountable, reducing confusion and preventing avoidable rework.
             </p>

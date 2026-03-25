@@ -11,10 +11,10 @@ module.exports = {
     },
     colors: {
       black: colors.black,
-      purple: "#272727",
-      pink: "#370000",
+      purple: "#5f6e7f",
+      pink: "#c7773b",
       white: colors.white,
-      lightblack: "#141414",
+      lightblack: "#171f28",
       gray: colors.gray,
       transparent: colors.transparent,
     },
